@@ -1,5 +1,5 @@
-import { useState } from 'react'
 import '../styles/acordionMenu.css'
+import { useState } from 'react'
 
 let switchControl = true;
 
