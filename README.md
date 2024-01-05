@@ -1,6 +1,6 @@
 <h1 align="center">👨‍💻 Manual de usuario BrightSign 📑</h1>
 
-<p align="center"><img src="./img/wallpaper-players.png" /></p>
+<p align="center"><img src="./public/img/wallpaper-players.png" /></p>
 
 ### Introducción
 
