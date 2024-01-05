@@ -1,0 +1,8 @@
+.secondaryMenu{
+  padding: 20px;
+  width: 20%;
+
+  & h2{
+    opacity: .5;
+  }
+}

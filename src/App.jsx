@@ -1,5 +1,6 @@
 import './App.css'
 import { Nav } from './components/Nav'
+import { SecondaryNav } from './components/SecondaryNav'
 
 function App() {
 
@@ -11,6 +12,10 @@ function App() {
         </section>
         <Nav />
       </header>
+      <main>
+        <SecondaryNav />
+        <div className='bodyTest'></div>
+      </main>
     </>
   )
 }

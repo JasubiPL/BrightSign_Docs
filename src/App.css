@@ -16,3 +16,12 @@
     }
   }
 }
+
+main{
+  width: 100%;
+  display: flex;
+}
+.bodyTest{
+  background-color: red;
+  width: 100%;
+}
