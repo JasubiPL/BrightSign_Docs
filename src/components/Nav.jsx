@@ -2,13 +2,17 @@ import { useState } from 'react'
 import { GitHubIcon } from '../jsxIcons/GitHubIcon'
 import { SearchIcon } from '../jsxIcons/SearchIcon'
 import '../styles/Nav.css'
+import { BurgerMenu } from '../jsxIcons/BurgerMenu'
 
-export const Nav = () =>{
+export const Nav = ({ secondaryMenuControl }) =>{
   const [switchSearch, setSwitchSearch] = useState('__MovileSearch-hidden')
   
   return(
     <nav className='principalMenu'>
       <div className='principalMenu__logo'>
+        <button className='btnSecondaryMenu' onClick={secondaryMenuControl}>
+          <BurgerMenu />
+        </button>
         <h1>Bright<span>Sign.doc</span></h1>
         <img src='./img/icons/flag-mx.svg' alt='Bandea mexico' />
       </div>

@@ -1,15 +1,23 @@
 .principalMenu{
-  background-color: var(--primary-color);
+  background-color: var(--secondary-color);
   height: 64px;
   padding: 0px 20px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  border-bottom: 1px solid var(--tertiary-color);
 
   & .principalMenu__logo{
     display: flex;
     gap: 10px;
     width: 20%;
+
+    & .btnSecondaryMenu{
+      background: none;
+      border: none;
+      color: #fff;
+      display: none;
+    }
 
 
     & img{
@@ -95,6 +103,10 @@
     gap: 20px;
     & .principalMenu__logo{
       width: auto;
+
+      & .btnSecondaryMenu{
+        display: block;
+      }
   
   
       & img{
@@ -115,6 +127,7 @@
 
 @media screen and (max-width:500px) {
   .principalMenu{
+    padding: 10px;
     & .principalMenu__logo{
       font-size: 14px;
 

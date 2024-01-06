@@ -1,14 +1,59 @@
 .secondaryMenu{
   padding: 20px;
-  width: 20%;
+  width: 350px;
+  background-color: var(--secondary-color);
+  height: calc(100vh - 103px);
+  overflow-y: scroll;
+  border-right: 1px solid var(--tertiary-color);
 
   & h2{
     opacity: .5;
   }
 }
 
+.secondaryMenu::-webkit-scrollbar{
+  background-color: var(--secondary-color);
+  width: 5px;
+}
+
+.secondaryMenu::-webkit-scrollbar-thumb{
+  background-color: var(--tertiary-color);
+}
+
 @media screen and (max-width:1024px) {
   .secondaryMenu{
-    transform: translateX(-200px);
+    position: absolute;
+    top:102px;
+    width: 80vw;
+    border-top: 1px solid var(--tertiary-color);
+    
+  }
+
+  .secondaryMenu--show{
+    left: 0;
+    animation: showSecondaryMenu .3s ease-in-out;
+  }
+  
+  .secondaryMenu--hidden{
+    left: -100vw;
+    animation: hiddenSecondaryMenu .3s ease-in-out;
+  }
+}
+
+@keyframes showSecondaryMenu {
+  0%{
+    left: -100vw;
+  }
+  100%{
+    left: 0;
+  }
+}
+
+@keyframes hiddenSecondaryMenu {
+  0%{
+    left: 0;
+  }
+  100%{
+    left: -100vw;
   }
 }

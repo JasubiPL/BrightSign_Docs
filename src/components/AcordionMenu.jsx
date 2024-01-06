@@ -18,8 +18,8 @@ export const AcordionMenu = ({ title, list}) =>{
   }
 
   return(
-    <ul className={acordionSwitch} onClick={switchAcordion}>
-      <h3>{ title }</h3>
+    <ul className={acordionSwitch} >
+      <h3 onClick={switchAcordion}>{ title }</h3>
       {
         list.map( option =>(
           <li key={ option }>{option}</li>

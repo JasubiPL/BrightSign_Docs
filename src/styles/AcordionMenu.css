@@ -15,6 +15,7 @@
     justify-content: space-between;
     cursor: pointer;
     background-color: var(--tertiary-color);
+    font-size: 16px;
 
 
     &::after{
@@ -25,7 +26,7 @@
   }
   
   & li{
-    padding: 15px 10px;
+    padding: 10px;
     border-radius: 10px;
     font-size: 14px;
     cursor: pointer;
@@ -43,15 +44,17 @@
   border-width: 0px 0px 1px 0px;
   border-color: var(--tertiary-color);
   padding: 10px 0px;
+  
 
   & h3{
     font-weight: 500;
     width: 100%;
     display: flex;
-    padding: 10px;
+    padding: 10px;;
     border-radius: 10px;
     justify-content: space-between;
     cursor: pointer;
+    font-size: 16px;
 
 
     &::after{
