@@ -1,24 +1,24 @@
 import '../styles/AcordionMenu.css'
 import { useState } from 'react'
 
-let switchControl = true;
 
 export const AcordionMenu = ({ title, list}) =>{
-  const [acordionSwitch, setAcordionSwitch] = useState('acordionMenuInactive')
+  
+  const [{ state, classActive }, setAcordionSwitch] = useState({ state: false, classActive: 'acordionMenuInactive'})
+  // const [switchControl, setSwitchControl] = useState(false)
 
   const switchAcordion = () =>{
 
-    if(switchControl){
-      setAcordionSwitch('acordionMenuActive')
-      switchControl = false
+    if(state){
+      setAcordionSwitch({ state: false, classActive:'acordionMenuInactive'})
     }else{
-      setAcordionSwitch('acordionMenuInactive')
-      switchControl = true
+      setAcordionSwitch({ state: true, classActive:'acordionMenuActive'})
+
     }
   }
 
   return(
-    <ul className={acordionSwitch} >
+    <ul className={classActive} >
       <h3 onClick={switchAcordion}>{ title }</h3>
       {
         list.map( option =>(

@@ -1,9 +1,7 @@
 .acordionMenuActive{
   list-style: none;
   margin-top: 20px;
-  border: solid ;
-  border-width: 0px 0px 1px 0px;
-  border-color: var(--tertiary-color);
+  border-bottom: 1px solid var(--gray-color);
   padding: 10px 0px;
 
   & h3{
@@ -14,13 +12,14 @@
     border-radius: 10px;
     justify-content: space-between;
     cursor: pointer;
-    background-color: var(--tertiary-color);
+    background-color: var(--secondary-color);
     font-size: 16px;
 
 
     &::after{
-      content: '▶';
+      content: '›';
       transform: rotate(90deg);
+      scale: 2;
       animation: arrowRotate .5s;
     }
   }
@@ -32,7 +31,7 @@
     cursor: pointer;
 
     &:hover{
-      background-color: var(--tertiary-color);
+      background-color: var(--gray-color);
     }
   }
 }
@@ -40,9 +39,7 @@
 .acordionMenuInactive{
   list-style: none;
   margin-top: 20px;
-  border: solid ;
-  border-width: 0px 0px 1px 0px;
-  border-color: var(--tertiary-color);
+  border-bottom: 1px solid var(--gray-color);
   padding: 10px 0px;
   
 
@@ -55,10 +52,15 @@
     justify-content: space-between;
     cursor: pointer;
     font-size: 16px;
+    
+    &:hover{
+      background-color: var(--gray-color);
+    }
 
 
     &::after{
-      content: '▶';
+      content: '›';
+      scale: 2;
       animation: arrowRotateInvert .5s;
     }
   }

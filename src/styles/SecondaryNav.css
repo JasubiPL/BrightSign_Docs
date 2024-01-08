@@ -1,23 +1,24 @@
 .secondaryMenu{
   padding: 20px;
   width: 350px;
-  background-color: var(--secondary-color);
+  background-color: var(--black-color);
   height: calc(100vh - 103px);
   overflow-y: scroll;
-  border-right: 1px solid var(--tertiary-color);
+  border-right: 1px solid  var(--gray-color);
 
   & h2{
-    opacity: .5;
+    color: var(--secondary-color);
+    
   }
 }
 
 .secondaryMenu::-webkit-scrollbar{
-  background-color: var(--secondary-color);
+  background-color: var(--black-color);
   width: 5px;
 }
 
 .secondaryMenu::-webkit-scrollbar-thumb{
-  background-color: var(--tertiary-color);
+  background-color: var(--gray-color);
 }
 
 @media screen and (max-width:1024px) {
@@ -25,7 +26,7 @@
     position: absolute;
     top:102px;
     width: 80vw;
-    border-top: 1px solid var(--tertiary-color);
+    border-top: 1px solid var(--gray-color);
     
   }
 
