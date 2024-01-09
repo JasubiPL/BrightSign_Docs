@@ -2,10 +2,10 @@ import '../styles/AcordionMenu.css'
 import { useState } from 'react'
 
 
-export const AcordionMenu = ({ title, list}) =>{
+export const AcordionMenu = ({ title, list, setPage, }) =>{
+  // console.log(list)
   
   const [{ state, classActive }, setAcordionSwitch] = useState({ state: false, classActive: 'acordionMenuInactive'})
-  // const [switchControl, setSwitchControl] = useState(false)
 
   const switchAcordion = () =>{
 
@@ -22,7 +22,7 @@ export const AcordionMenu = ({ title, list}) =>{
       <h3 onClick={switchAcordion}>{ title }</h3>
       {
         list.map( option =>(
-          <li key={ option }>{option}</li>
+          <li className='acordionMenu__item' key={ option.title } onClick={() => setPage(option.component)}>{option.title}</li>
         ) )
       }
     </ul>

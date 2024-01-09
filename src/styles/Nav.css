@@ -60,7 +60,7 @@
     width: 20%;
     display: flex;
     justify-content: flex-end;
-    gap: 10px;
+    gap: 20px;
     align-items: center;
 
     & svg{

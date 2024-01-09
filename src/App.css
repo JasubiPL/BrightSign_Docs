@@ -2,9 +2,9 @@
   width: 100%;
   text-align: center;
   padding: 10px 0px;
-  background-color: var(--tertiary-color);
-  color: var(--secondary-color);
+  background-color: var(--primary-color);
   font-size: 14px;
+  border-bottom: 1px solid var(--gray-color);
 
   & a{
     text-decoration: none;

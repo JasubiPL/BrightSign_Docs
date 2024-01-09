@@ -1,12 +1,31 @@
 import { useState } from 'react'
 import './App.css'
 import { Nav } from './components/Nav'
+import { Ecosistema, Configuracion, GestionDeContenido } from './pages'
 import { SecondaryNav } from './components/SecondaryNav'
 
 let switchSecondaryMenuControl = true
 
+const introduccion = [
+  {
+    component: <Ecosistema />,
+    title:'Ecosistema',
+  },
+  {
+    component: <Configuracion />,
+    title:'Configuracion',
+  },
+  {
+    component: <GestionDeContenido />,
+    title:'Gestion de contenido',
+  },
+]
+
+//Empeiza componente ---------------->
+
 function App() {
   const [showSecondaryMenu, setShowSecondaryMenu] = useState('secondaryMenu--hidden')
+  const [currentPage, setCurrentPage] = useState(<Ecosistema />)
 
   const switchSecondaryMenu = () =>{
     
@@ -19,6 +38,25 @@ function App() {
     }
   }
 
+  const changePage = (page) =>{
+    const acordionMenuItem = document.querySelectorAll('.acordionMenu__item')
+    
+    
+    acordionMenuItem.forEach((item) => {
+      item.addEventListener('click', function () {
+        acordionMenuItem.forEach((item) => {
+          item.style.backgroundColor = "var(--black-color)"
+        })
+        this.style.backgroundColor = "var(--secondary-color)"
+      })
+    })
+
+    setCurrentPage(page)
+  }
+
+    
+
+
   return (
     <>
       <header>
@@ -28,8 +66,12 @@ function App() {
         <Nav secondaryMenuControl={switchSecondaryMenu}/>
       </header>
       <main>
-        <SecondaryNav stateSecondaryMenu={showSecondaryMenu}/>
-        <div className='bodyTest'>Test</div>
+        <SecondaryNav 
+          stateSecondaryMenu={showSecondaryMenu} 
+          introduccion={ introduccion } 
+          setPage={ changePage }
+        />
+        { currentPage }
       </main>
     </>
   )

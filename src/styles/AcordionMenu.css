@@ -71,6 +71,10 @@
   }
 }
 
+.acordionMenu__item--Active{
+  color: red;
+}
+
 @keyframes arrowRotate {
   0%{
     transform: rotate(0);
