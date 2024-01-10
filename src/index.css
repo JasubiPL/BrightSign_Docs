@@ -2,6 +2,7 @@
 
   --primary-color: #4c0bce;
   --secondary-color: #712cf9;
+  --secondary-color-alpha: rgba(113, 44, 249, .25);
   --black-color: #101010;
   --gray-color: rgba(255, 255, 255, 0.1)
 }

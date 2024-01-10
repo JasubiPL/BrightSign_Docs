@@ -1,0 +1,39 @@
+.pagesBody{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+
+  & h1{
+    font-size: 40px;
+  }
+
+  & h2{
+    font-size: 28px;
+  }
+
+  & .pagesBody--content{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    /* background-color: #fff1; */
+    padding: 10px;
+
+    & .pageBody__code{
+      display: flex;
+      align-self: center;
+      width: 100%;
+      border-radius: 10px;
+      border: 2px solid var(--secondary-color);
+      padding: 20px 10px;
+      margin: 20px;
+      background-color: var(--secondary-color-alpha);
+    }
+  }
+
+  & .pageBody__aside{
+    display: none;
+    border-left: 1px solid var(--gray-color);
+    width: 300px;
+  }
+}
+

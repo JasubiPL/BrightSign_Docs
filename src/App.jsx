@@ -1,8 +1,9 @@
 import { useState } from 'react'
 import { Nav } from './components/Nav'
 import { SecondaryNav } from './components/SecondaryNav'
-import './App.css'
 import { introductionSection } from './data/pages.jsx'
+import './App.css'
+
 
 let switchSecondaryMenuControl = true
 
@@ -39,9 +40,6 @@ function App() {
     setCurrentPage(page)
     switchSecondaryMenu()
   }
-
-
-
 
   return (
     <>
