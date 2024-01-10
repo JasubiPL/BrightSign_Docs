@@ -1,5 +1,5 @@
 .secondaryMenu{
-  padding: 20px;
+  padding: 10px ;
   width: 350px;
   background-color: var(--black-color);
   height: calc(100vh - 103px);
@@ -9,6 +9,35 @@
   & h2{
     color: var(--secondary-color);
     
+  }
+
+  & .secondaryMenu__header{
+    display: none;
+    align-items: center;
+    justify-content: space-between;
+
+    & button{
+      background: none;
+      border: none;
+      border-radius: 30px;
+      padding: 5px;
+      transition: .5s;
+
+      &:active{
+        background-color: var(--gray-color);
+      }
+    }
+  }
+
+  & .__header__logo{
+    
+    & h3{
+      font-weight: 600;
+
+      & span{
+        font-weight: normal;
+      }
+    }
   }
 }
 
@@ -24,10 +53,14 @@
 @media screen and (max-width:1024px) {
   .secondaryMenu{
     position: absolute;
-    top:102px;
-    width: 80vw;
-    border-top: 1px solid var(--gray-color);
-    
+    top:0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+
+    & .secondaryMenu__header{
+      display: flex;
+    }
   }
 
   .secondaryMenu--show{

@@ -1,34 +1,19 @@
 import { useState } from 'react'
-import './App.css'
 import { Nav } from './components/Nav'
-import { Ecosistema, Configuracion, GestionDeContenido } from './pages'
 import { SecondaryNav } from './components/SecondaryNav'
+import './App.css'
+import { introductionSection } from './data/pages.jsx'
 
 let switchSecondaryMenuControl = true
-
-const introduccion = [
-  {
-    component: <Ecosistema />,
-    title:'Ecosistema',
-  },
-  {
-    component: <Configuracion />,
-    title:'Configuracion',
-  },
-  {
-    component: <GestionDeContenido />,
-    title:'Gestion de contenido',
-  },
-]
 
 //Empeiza componente ---------------->
 
 function App() {
   const [showSecondaryMenu, setShowSecondaryMenu] = useState('secondaryMenu--hidden')
-  const [currentPage, setCurrentPage] = useState(<Ecosistema />)
+  const [currentPage, setCurrentPage] = useState(introductionSection[0].component)
 
   const switchSecondaryMenu = () =>{
-    
+
     if(switchSecondaryMenuControl){
       setShowSecondaryMenu('secondaryMenu--show')
       switchSecondaryMenuControl = false
@@ -40,21 +25,22 @@ function App() {
 
   const changePage = (page) =>{
     const acordionMenuItem = document.querySelectorAll('.acordionMenu__item')
-    
-    
+
+
     acordionMenuItem.forEach((item) => {
       item.addEventListener('click', function () {
         acordionMenuItem.forEach((item) => {
           item.style.backgroundColor = "var(--black-color)"
         })
-        this.style.backgroundColor = "var(--secondary-color)"
+        this.style.backgroundColor = "var(--gray-color)"
       })
     })
 
     setCurrentPage(page)
+    switchSecondaryMenu()
   }
 
-    
+
 
 
   return (
@@ -66,10 +52,11 @@ function App() {
         <Nav secondaryMenuControl={switchSecondaryMenu}/>
       </header>
       <main>
-        <SecondaryNav 
-          stateSecondaryMenu={showSecondaryMenu} 
-          introduccion={ introduccion } 
+        <SecondaryNav
+          stateSecondaryMenu={showSecondaryMenu}
+          introduccion={ introductionSection }
           setPage={ changePage }
+          secondaryMenuControl={switchSecondaryMenu}
         />
         { currentPage }
       </main>

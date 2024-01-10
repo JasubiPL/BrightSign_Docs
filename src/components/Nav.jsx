@@ -4,6 +4,7 @@ import { SearchIcon } from '../jsxIcons/SearchIcon'
 import '../styles/Nav.css'
 import { BurgerMenu } from '../jsxIcons/BurgerMenu'
 
+
 export const Nav = ({ secondaryMenuControl }) =>{
   const [switchSearch, setSwitchSearch] = useState('__MovileSearch-hidden')
   
@@ -26,7 +27,6 @@ export const Nav = ({ secondaryMenuControl }) =>{
         <a href="https://github.com/JasubiPL/BrightSign_Docs" target='blanck'>
           <GitHubIcon width={30} height={30} fill="#fff"/>
         </a>
-        <p>V0.0.1</p>
       </section>
     </nav>
   )

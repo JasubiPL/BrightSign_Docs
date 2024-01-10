@@ -2,8 +2,8 @@ import '../styles/AcordionMenu.css'
 import { useState } from 'react'
 
 
-export const AcordionMenu = ({ title, list, setPage, }) =>{
-  // console.log(list)
+export const AcordionMenu = ({ title, list, setPage}) =>{
+  
   
   const [{ state, classActive }, setAcordionSwitch] = useState({ state: false, classActive: 'acordionMenuInactive'})
 
