@@ -1,8 +1,7 @@
 import { useState } from 'react'
-import { GitHubIcon } from '../jsxIcons/GitHubIcon'
-import { SearchIcon } from '../jsxIcons/SearchIcon'
-import '../styles/Nav.css'
+import { GitHubIcon, SearchIcon } from '../jsxIcons'
 import { BurgerMenu } from '../jsxIcons/BurgerMenu'
+import '../styles/Nav.css'
 
 
 export const Nav = ({ secondaryMenuControl }) =>{
@@ -15,7 +14,7 @@ export const Nav = ({ secondaryMenuControl }) =>{
           <BurgerMenu />
         </button>
         <h1>Bright<span>Sign</span></h1>
-        <img src='./img/icons/flag-mx.svg' alt='Bandea mexico' />
+        <img src='./img/icons/doc.png' alt='Bandea mexico' />
       </div>
       {/* <form className={`${screen.width > 500 ? 'principalMenu__search' : `principalMenu__MovileSearch ${switchSearch}` }`}>
         <input type="text" placeholder='🔎 Buscar' />

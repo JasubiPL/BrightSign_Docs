@@ -22,7 +22,7 @@ export const AcordionMenu = ({ title, list, setPage}) =>{
       <h3 onClick={switchAcordion}>{ title }</h3>
       {
         list.map( option =>(
-          <li className='acordionMenu__item' key={ option.title } onClick={() => setPage(option.component)}>{option.title}</li>
+          <li className='acordionMenu__item' key={ option.title } onClick={() => setPage(option.component )}>{option.title}</li>
         ) )
       }
     </ul>

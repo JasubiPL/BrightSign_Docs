@@ -21,7 +21,7 @@
 
 
     & img{
-      height: 15px;
+      height: 30px;
     }
 
     & h1{
@@ -117,7 +117,9 @@
   
   
       & img{
-        height: 10px;
+        height: 25px;
+        translate: -5px 2px;
+        
       }
 
     }

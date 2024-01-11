@@ -1,0 +1,36 @@
+.pageBody__aside{
+  width: 350px;
+  padding: 10px;
+
+  & .__aside__header{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    & h3{
+      margin: 20px 0px;
+    }
+
+  }
+
+
+  & ol{
+    list-style: none;
+    display: grid;
+    gap: 5px;
+    
+
+    & a{
+      padding: 10px 5px;
+      cursor: pointer;
+      border-radius: 5px;
+      color: #fff;
+      text-decoration: none;
+      font-family: var(--title-font);
+
+      &:hover{
+        background-color: var(--secondary-color-alpha);
+      }
+    }
+  }
+}
