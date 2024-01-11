@@ -74,15 +74,6 @@
   }
 }
 
-.__aside--hidden{
-  left:-100vw;
-  animation: hiddenSecondaryMenu .5s;
-}
-
-.__aside--show{
-  left:0;
-  animation: showSecondaryMenu .5;
-}
 @media screen and (max-width:1024px) {
   .pagesBody{
     width: 100%;
@@ -97,26 +88,7 @@
     }
   
     & .pageBody__aside{   
-      position: absolute;
-      top:0;
-      width: 100vw;
-      height: 100vh;
-      background-color: var(--black-color);
-      border-left: 1px solid var(--gray-color);
-      z-index: 2;
-
-      & .__aside__header{
-        border-bottom: 1px solid var(--gray-color);
-        margin-bottom: 10px;
-  
-        & h3{
-          margin: 10px 0px;
-        }
-  
-        & button{
-          display: flex;
-        }
-      }
+      display: none;
     }
   }
 }

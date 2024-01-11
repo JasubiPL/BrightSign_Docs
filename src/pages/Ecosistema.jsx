@@ -1,25 +1,18 @@
-import { useState } from 'react'
-import { BackArrow } from '../jsxIcons/BackArrow'
+import { DialogBox } from '../components/DialogBox'
 import '../styles/pages/pagesStyles.css'
 
 export const Ecosistema = () =>{
-
-  const [statusAside, setStatusAside ] = useState('__aside--hidden')
-
 
   return(
     <section className="pagesBody">
       <section className='pagesBody--content'>
         <h1>Ecosistema</h1>
-        <div className='dialogBox'>
-          error code (Error code: -7) on the same device.
-        </div>
+        <DialogBox type='comment'>
+          Este es el codigo interno
+        </DialogBox>
       </section>
-      <aside className={`pageBody__aside  ${statusAside}`} >
+      <aside className='pageBody__aside' >
         <div className='__aside__header'>
-          <button onClick={() => setStatusAside('__aside--hidden')}>
-            <BackArrow width={30} heigth={30}/>
-          </button>
           <h3>En esta Pagína 🔎</h3>
         </div>
         <ol>

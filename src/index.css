@@ -32,17 +32,6 @@ h1, h2, h3{
   background-color: var(--gray-color);
 }
 
-.dialogBox{
-  display: flex;
-  align-self: center;
-  width: 100%;
-  border-radius: 10px;
-  border: 2px solid var(--secondary-color);
-  padding: 20px 10px;
-  margin: 20px;
-  background-color: var(--secondary-color-alpha);
-}
-
 @keyframes showSecondaryMenu {
   0%{
     left: -100vw;

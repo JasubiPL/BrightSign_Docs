@@ -25,11 +25,12 @@ function App() {
   }
 
   const changePage = (page) =>{
+    //⚠️ Corregir problema de la primera ejecucion
     const acordionMenuItem = document.querySelectorAll('.acordionMenu__item')
 
-
     acordionMenuItem.forEach((item) => {
-      item.addEventListener('click', function () {
+      item.addEventListener('click', function() {
+        // console.log('Click')
         acordionMenuItem.forEach((item) => {
           item.className = "acordionMenu__item"
           
