@@ -15,13 +15,22 @@
     display: none;
     align-items: center;
     justify-content: space-between;
+    border-bottom: 1px solid var(--gray-color);
+    padding-bottom: 10px;
 
     & button{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 35px;
+      height: 35px;
       background: none;
       border: none;
-      border-radius: 30px;
+      border-radius: 50px;
       padding: 5px;
-      transition: .5s;
+      transition: .2s;
+      overflow: hidden;
+
 
       &:active{
         background-color: var(--gray-color);
@@ -74,20 +83,3 @@
   }
 }
 
-@keyframes showSecondaryMenu {
-  0%{
-    left: -100vw;
-  }
-  100%{
-    left: 0;
-  }
-}
-
-@keyframes hiddenSecondaryMenu {
-  0%{
-    left: 0;
-  }
-  100%{
-    left: -100vw;
-  }
-}

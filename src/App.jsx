@@ -31,9 +31,11 @@ function App() {
     acordionMenuItem.forEach((item) => {
       item.addEventListener('click', function () {
         acordionMenuItem.forEach((item) => {
-          item.style.backgroundColor = "var(--black-color)"
+          item.className = "acordionMenu__item"
+          
         })
-        this.style.backgroundColor = "var(--gray-color)"
+        this.className = "acordionMenu__item selected"
+
       })
     })
 

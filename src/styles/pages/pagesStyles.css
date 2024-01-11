@@ -1,7 +1,8 @@
 .pagesBody{
   display: flex;
-  width: 100%;
+  width: calc(100% - 350px);
   justify-content: space-between;
+
 
   & h1{
     font-size: 40px;
@@ -11,29 +12,111 @@
     font-size: 28px;
   }
 
+  & h3{
+    font-size: 20px;
+  }
+
   & .pagesBody--content{
     display: flex;
     flex-direction: column;
-    width: 100%;
-    /* background-color: #fff1; */
-    padding: 10px;
+    width: calc(100% - 350px);
+    padding: 50px 150px;
 
-    & .pageBody__code{
-      display: flex;
-      align-self: center;
-      width: 100%;
-      border-radius: 10px;
-      border: 2px solid var(--secondary-color);
-      padding: 20px 10px;
-      margin: 20px;
-      background-color: var(--secondary-color-alpha);
-    }
   }
 
   & .pageBody__aside{
-    display: none;
-    border-left: 1px solid var(--gray-color);
-    width: 300px;
+    width: 350px;
+    padding: 10px;
+
+    & .__aside__header{
+      display: flex;
+      align-items: center;
+      gap: 20px;
+
+      & h3{
+        margin: 20px 0px;
+      }
+
+      & button{
+        display: none;
+        justify-content: center;
+        align-items: center;
+        width: 35px;
+        height: 35px;
+        background: none;
+        border: none;
+        border-radius: 50px;
+        padding: 5px;
+        transition: .2s;
+        overflow: hidden;
+
+        &:active{
+          background-color: var(--gray-color);
+        }
+      }
+    }
+
+    & ol{
+      list-style: none;
+      display: grid;
+      gap: 5px;
+
+      & li{
+        padding: 10px 5px;
+        cursor: pointer;
+        border-radius: 5px;
+
+        &:hover{
+          background-color: var(--secondary-color-alpha);
+        }
+      }
+    }
   }
 }
 
+.__aside--hidden{
+  left:-100vw;
+  animation: hiddenSecondaryMenu .5s;
+}
+
+.__aside--show{
+  left:0;
+  animation: showSecondaryMenu .5;
+}
+@media screen and (max-width:1024px) {
+  .pagesBody{
+    width: 100%;
+    overflow: hidden;
+
+    & .pagesBody--content{
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      padding: 10px 20px;
+  
+    }
+  
+    & .pageBody__aside{   
+      position: absolute;
+      top:0;
+      width: 100vw;
+      height: 100vh;
+      background-color: var(--black-color);
+      border-left: 1px solid var(--gray-color);
+      z-index: 2;
+
+      & .__aside__header{
+        border-bottom: 1px solid var(--gray-color);
+        margin-bottom: 10px;
+  
+        & h3{
+          margin: 10px 0px;
+        }
+  
+        & button{
+          display: flex;
+        }
+      }
+    }
+  }
+}

@@ -14,12 +14,12 @@ export const Nav = ({ secondaryMenuControl }) =>{
         <button className='btnSecondaryMenu' onClick={secondaryMenuControl}>
           <BurgerMenu />
         </button>
-        <h1>Bright<span>Sign.doc</span></h1>
+        <h1>Bright<span>Sign</span></h1>
         <img src='./img/icons/flag-mx.svg' alt='Bandea mexico' />
       </div>
-      <form className={`${screen.width > 500 ? 'principalMenu__search' : `principalMenu__MovileSearch ${switchSearch}` }`}>
+      {/* <form className={`${screen.width > 500 ? 'principalMenu__search' : `principalMenu__MovileSearch ${switchSearch}` }`}>
         <input type="text" placeholder='🔎 Buscar' />
-      </form>
+      </form> */}
       <section className='principalMenu__socialNetwork'>
         <button onClick={() => setSwitchSearch('__MovileSearch-show')}>
           <SearchIcon width={30} height={30} fill='#fff' />          
