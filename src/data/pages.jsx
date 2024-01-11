@@ -7,7 +7,7 @@ export const sections = [
       {
         component: <Ecosistema />,
         title:'Ecosistema',
-        internalSections: ['Tema 1', 'Tema 2', 'Tema 3', 'Tema 4']
+        internalSections: ['Introducción', 'BrightSign Network', 'Tema 3', 'Tema 4']
       },
       {
         component: <Configuracion />,
@@ -21,24 +21,7 @@ export const sections = [
       },
     ] 
   },
-  {
-    titleSection: '🔴 Errores',
-    subSections: [
-      {
-        component: <Ecosistema />,
-        title:'Ecosistema',
-        internalSections: ['Tema 1', 'Tema 2', 'Tema 3', 'Tema 4']
-      },
-      {
-        component: <Configuracion />,
-        title:'Configuracion',
-      },
-      {
-        component: <GestionDeContenido />,
-        title:'Gestion de contenido',
-      },
-    ] 
-  }
+
 ]
 
 export const firstPage = <Ecosistema />

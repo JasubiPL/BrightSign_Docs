@@ -1,11 +1,17 @@
 .dialogBox{
-  display: flex;
+  display: grid;
+  gap: 10px;
   align-self: center;
   width: 100%;
   border-radius: 10px;
   padding: 20px 30px;
-  margin: 20px;
+  margin: 40px 0px;
   box-shadow: 0px 0px 15px #000;
+
+  & label{
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
   
 }
 
@@ -17,9 +23,24 @@
 .__error{
   background-color: rgba(255, 0, 0, 0.2);
   border: 2px solid red;
+  font-family: var(--code-font);
 }
 
 .__comment{
   background-color: var(--gray-color);
   border: 2px solid #333;
+}
+
+@media screen and (max-width:600px) {
+  .dialogBox{
+    gap: 5px;
+    padding: 20px 10px;
+    font-size: 14px;
+  
+    & label{
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+    
+  }
 }

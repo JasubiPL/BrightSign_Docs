@@ -1,8 +1,8 @@
 .secondaryMenu{
   padding: 10px ;
-  width: 350px;
+  width: 17%;
   background-color: var(--black-color);
-  height: calc(100vh - 103px);
+  min-height: calc(100vh - 103px);
   overflow-y: scroll;
   border-right: 1px solid  var(--gray-color);
 
