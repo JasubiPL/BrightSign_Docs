@@ -36,9 +36,20 @@ h1, h2, h3{
 
 .highlighted{
   background-color: var(--gray-color);
-  padding: 0px 5px;
-  border-radius: 5px;
-  font-weight: bold;
+  padding: 2px 5px;
+  border-radius: 3px;
+}
+
+.link{
+    color: #fff;
+    background-color: var(--secondary-color-alpha);
+    padding: 2px 5px;
+    border-radius: 3px;
+    text-decoration: none;
+
+    &:hover{
+      text-decoration:underline;
+    }
 }
 
 @keyframes showSecondaryMenu {

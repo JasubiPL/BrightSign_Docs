@@ -1,25 +1,22 @@
-.author{
-  width: 100%;
-  text-align: center;
-  padding: 10px 0px;
-  background-color: var(--primary-color);
-  font-size: 14px;
-  border-bottom: 1px solid var(--gray-color);
-
-  & a{
-    text-decoration: none;
-    color: #fff;
-    font-weight: bold;
-
-    &:hover{
-      text-decoration: underline;
-    }
-  }
-}
-
 main{
   width: 100%;
   display: flex;
+}
+
+footer{
+  border-top: 1px solid var(--gray-color);
+  height: 150px;
+  display: grid;
+  place-items: center;
+
+  & .footer--center{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    text-decoration: none;
+    color: #fff;
+    font-family: var(--code-font);
+  }
 }
 .bodyTest{
   width: 100%;

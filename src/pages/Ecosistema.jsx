@@ -19,9 +19,9 @@ export const Ecosistema = () =>{
             videos he incluso archivos HTML5, dependiendo el modelo del Player.
             <br /><br />
             Este es un manual de usuario básico en el cual encontraras los fundamentos para poder gestionar el 
-            contenido adecuadamente. Siempre podrás ir a la página oficial <a href="https://brightsign.biz" target='blanck'>BrightSign.biz</a> para mas informacion, cabe mencionar que dicho contenido esta en inglés.
+            contenido adecuadamente. Siempre podrás ir a la página oficial <a className='link' href="https://brightsign.biz" target='blanck'>BrightSign.biz</a> para mas informacion, cabe mencionar que dicho contenido esta en inglés.
             <br /><br />        
-            También puedes acceder a los cursos especializados que ofrece BrightSign, en <a href="https://www.brightsign.biz/resources/brightsign-academy/" target='blanck'> BrightSign Academy </a> solo que estos cursos son de igual manera en ingles y son del su nueva Network.
+            También puedes acceder a los cursos especializados que ofrece BrightSign, en <a className='link' href="https://www.brightsign.biz/resources/brightsign-academy/" target='blanck'> BrightSign Academy </a> solo que estos cursos son de igual manera en ingles y son del su nueva Network.
           </p>
 
           <DialogBox type='comment'>
@@ -40,18 +40,20 @@ export const Ecosistema = () =>{
             El "Player" es el dispositivo a través del cual se transmite el contenido a una pantalla, panel led, proyector, etc. 
             <br /><br />
             Estos dispositivos cuentan con varias entradas y características dependiendo el modelo, ofreciéndonos diferentes soluciones.
-            <DialogBox type='comment'>
-            <label>Algunas de las entradas con las que cuentan estos dispositivos  son:</label>
-            <ul>
-              <li>USB-C</li>
-              <li>USB-A</li>
-              <li>HDMI</li>
-              <li>Mini Jack</li>
-              <li>IR</li>
-              <li>GPIO</li>
-            </ul>            
-            
+          </p>
+          <DialogBox type='comment'>
+          <label>Algunas de las entradas con las que cuentan estos dispositivos  son:</label>
+          <ul>
+            <li>USB-C</li>
+            <li>USB-A</li>
+            <li>HDMI</li>
+            <li>Mini Jack</li>
+            <li>IR</li>
+            <li>GPIO</li>
+          </ul>            
+          
           </DialogBox>
+          <p>
             Actualmente, estamos en la 5ª generación, sin embargo, debido a que las generaciones 1 -3 ya están descontinuadas
             y sin soporte, aremos referencia a los modelos de la 4ª y 5ª generación. 
           </p>
@@ -85,7 +87,7 @@ export const Ecosistema = () =>{
             BrightSign Network es el nombre que tiene el ecosistema de BrightSign, la suma del portal de internet, la aplicación de
             escritorio, la nube y los Players.
             <br /><br />
-            Cuenta con portal de internet en <a href="https://www.brightsignnetwork.com" target='blanck'>brightsignnetwork.com</a> donde deberás ingresar tus credenciales para poder acceder. 
+            Cuenta con portal de internet en <a className='link' href="https://www.brightsignnetwork.com" target='blanck'>brightsignnetwork.com</a> donde deberás ingresar tus credenciales para poder acceder. 
             <br /><br />
             En la sección Portal Web encontrarás más información sobre cómo obtener tus credenciales.
 

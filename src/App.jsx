@@ -47,9 +47,6 @@ function App() {
   return (
     <>
       <header>
-        <section className='author'>
-          <p>Soportado por <a href="https://www.linkedin.com/in/jasubip/" target='blanck'> Jasubi Piñeyro - @jasubip</a></p>
-        </section>
         <Nav secondaryMenuControl={switchSecondaryMenu}/>
       </header>
       <main>
@@ -60,6 +57,12 @@ function App() {
         />
         { currentPage }
       </main>
+      <footer>
+      <a className='footer--center' href="https://www.linkedin.com/in/jasubip/" target='blanck'>
+          Powered By
+          <img src="./img/author.png" alt="" />
+        </a>
+      </footer>
     </>
   )
 }
