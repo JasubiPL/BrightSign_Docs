@@ -1,0 +1,62 @@
+.homePage{
+  width: 100%;
+  min-height: 100vh;
+  background-image: url(./img/background-home.jpg);
+  background-color: rgba(0, 0, 0, 0.7);
+  background-position: right;
+  background-size: cover;
+  display: grid;
+  place-items: center;
+
+ & .container{
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+
+  & button{
+    font-size: 38px;
+    background-color: #fff;
+    padding: 15px 40px;
+    border-radius: 10px;
+    border: none;
+    align-self: center;
+    cursor: pointer;
+    color: var(--primary-color);
+    transition: .2s;
+
+    &:hover{
+      background-color: var(--secondary-color);
+      color: #fff;
+    }
+
+    &:active{
+      scale: .9;
+    }
+  }
+  & h1{
+    font-size: 60px;
+    text-align: center;
+    
+  }
+ }
+}
+
+@media screen and (max-width: 600px) {
+  .homePage{
+  
+   & .container{
+    width: 90%;
+  
+    & button{
+      font-size: 24px;
+      padding: 10px 30px;
+    }
+    & h1{
+      font-size: 32px;
+      text-align: center;
+      
+    }
+   }
+  }
+}

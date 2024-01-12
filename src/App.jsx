@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { Nav } from './components/Nav'
 import { SecondaryNav } from './components/SecondaryNav'
-import { firstPage } from './data/pages.jsx'
+import { Home } from './pages/Home.jsx'
 import './App.css'
 
 
@@ -11,7 +11,7 @@ let switchSecondaryMenuControl = true
 
 function App() {
   const [showSecondaryMenu, setShowSecondaryMenu] = useState('secondaryMenu--hidden')
-  const [currentPage, setCurrentPage] = useState(firstPage)
+  const [currentPage, setCurrentPage] = useState(<Home  />)
 
   const switchSecondaryMenu = () =>{
 

@@ -34,7 +34,7 @@ export const Ecosistema = () =>{
             </ul>
           </DialogBox>
         </section>
-        <section className='__players'>
+        <section id='Qué es un Players' className='__players'>
           <h2>¿Qué es un Player?</h2>
           <p>
             El "Player" es el dispositivo a través del cual se transmite el contenido a una pantalla, panel led, proyector, etc. 

@@ -7,7 +7,7 @@ export const sections = [
       {
         component: <Ecosistema />,
         title:'Ecosistema',
-        internalSections: ['Introducción', 'BrightSign Network', 'Tema 3', 'Tema 4']
+        internalSections: ['Introducción', 'Qué es un Players', 'BrightSign Network']
       },
       {
         component: <Configuracion />,
