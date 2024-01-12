@@ -29,7 +29,6 @@
       background-color: var(--secondary-color);
       color: #fff;
     }
-
     &:active{
       scale: .9;
     }
