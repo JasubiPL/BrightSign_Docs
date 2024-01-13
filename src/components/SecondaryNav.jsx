@@ -4,11 +4,11 @@ import { AcordionMenu } from './AcordionMenu'
 import { sections } from '../data/pages'
 
 
-export const SecondaryNav = ({ stateSecondaryMenu, setPage, secondaryMenuControl}) =>{
+export const SecondaryNav = ({ stateSecondaryMenu, setPage, secondaryMenuControl, displayOnDescktop}) =>{
 
   
   return(
-    <nav className={`secondaryMenu ${ stateSecondaryMenu }`}>
+    <nav className={`secondaryMenu ${ stateSecondaryMenu } ${displayOnDescktop}`}>
       <section className='secondaryMenu__header'>
         <button onClick={ secondaryMenuControl }>
           <BackArrow width={30} heigth={30}/>

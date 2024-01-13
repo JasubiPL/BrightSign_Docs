@@ -13,7 +13,7 @@ export const Nav = ({ secondaryMenuControl }) =>{
         <button className='btnSecondaryMenu' onClick={secondaryMenuControl}>
           <BurgerMenu />
         </button>
-        <h1>Bright<span>Sign</span></h1>
+        <h1 onClick={() => location.reload()}>Bright<span>Sign</span></h1>
         <img src='./img/icons/doc.png' alt='Bandea mexico' />
       </div>
       {/* <form className={`${screen.width > 500 ? 'principalMenu__search' : `principalMenu__MovileSearch ${switchSearch}` }`}>

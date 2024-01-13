@@ -52,6 +52,16 @@ h1, h2, h3{
     }
 }
 
+.display-none{
+  display: none;
+}
+
+@media screen and (max-width:1024px) {
+  .display-none{
+    display: block;
+  }
+}
+
 @keyframes showSecondaryMenu {
   0%{
     left: -100vw;

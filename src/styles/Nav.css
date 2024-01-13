@@ -11,6 +11,7 @@
     gap: 10px;
     width: 20%;
     align-items: center;
+    cursor: pointer;
 
     & .btnSecondaryMenu{
       background: none;

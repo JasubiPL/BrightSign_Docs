@@ -1,6 +1,8 @@
 .pageBody__aside{
   width: 17vw;
   padding: 10px;
+  position: fixed;
+  right: 0;
 
   & .__aside__header{
     display: flex;

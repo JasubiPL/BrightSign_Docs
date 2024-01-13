@@ -5,7 +5,7 @@ import { useState } from 'react'
 export const AcordionMenu = ({ title, list, setPage}) =>{
   
   
-  const [{ state, classActive }, setAcordionSwitch] = useState({ state: false, classActive: 'acordionMenuInactive'})
+  const [{ state, classActive }, setAcordionSwitch] = useState({ state: true, classActive: 'acordionMenuActive'})
 
   const switchAcordion = () =>{
 

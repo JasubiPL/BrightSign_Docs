@@ -1,6 +1,7 @@
 .pagesBody{
   display: flex;
-  width: 83%; 
+  width: 83%;
+  overflow-y:scroll;
   justify-content: space-between;
 
 

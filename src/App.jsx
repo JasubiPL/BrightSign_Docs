@@ -1,7 +1,7 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { Nav } from './components/Nav'
 import { SecondaryNav } from './components/SecondaryNav'
-import { Home } from './pages/Home.jsx'
+import { Ecosistema, Home } from './pages'
 import './App.css'
 
 
@@ -11,6 +11,7 @@ let switchSecondaryMenuControl = true
 
 function App() {
   const [showSecondaryMenu, setShowSecondaryMenu] = useState('secondaryMenu--hidden')
+  const [displaySecondaryMenu, setDisplaySecondaryMenu] = useState('display-none')
   const [currentPage, setCurrentPage] = useState(<Home  />)
 
   const switchSecondaryMenu = () =>{
@@ -44,16 +45,26 @@ function App() {
     switchSecondaryMenu()
   }
 
+  const startBtn = () =>{
+    setCurrentPage(<Ecosistema />)
+    setDisplaySecondaryMenu('')
+  }
+
+  useEffect(() =>{
+    setCurrentPage(<Home setPage={startBtn} />)
+  },[])
+
   return (
     <>
       <header>
-        <Nav secondaryMenuControl={switchSecondaryMenu}/>
+        <Nav secondaryMenuControl={switchSecondaryMenu} />
       </header>
       <main>
         <SecondaryNav
           stateSecondaryMenu={showSecondaryMenu}
           setPage={ changePage }
           secondaryMenuControl={switchSecondaryMenu}
+          displayOnDescktop={displaySecondaryMenu}
         />
         { currentPage }
       </main>

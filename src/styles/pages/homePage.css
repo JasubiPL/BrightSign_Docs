@@ -1,60 +1,112 @@
 .homePage{
   width: 100%;
-  min-height: 100vh;
-  background-image: url(./img/background-home.jpg);
+  background-image: url(/img/background-home.jpg);
   background-color: rgba(0, 0, 0, 0.7);
   background-position: right;
   background-size: cover;
+  padding: 50px 150px;
+
+ & .presentation{
+  width: 100%;
   display: grid;
-  place-items: center;
-
- & .container{
-  width: 60%;
-  display: flex;
-  flex-direction: column;
+  grid-template-columns: 1fr 1fr;
   gap: 30px;
+  align-items: center;
+  min-height: 80vh;
 
-  & button{
-    font-size: 38px;
-    background-color: #fff;
-    padding: 15px 40px;
-    border-radius: 10px;
-    border: none;
-    align-self: center;
-    cursor: pointer;
-    color: var(--primary-color);
-    transition: .2s;
+  & .presentation__title{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
 
-    &:hover{
+    & button{
+      font-size: 24px;
       background-color: var(--secondary-color);
+      padding: 15px 40px;
+      border-radius: 10px;
+      border: none;
+      align-self: center;
+      cursor: pointer;
       color: #fff;
+      transition: .2s;
+      border: 1px solid var(--secondary-color);
+  
+      &:hover{
+        background-color: var(--primary-color);
+      }
+      &:active{
+        scale: .9;
+      }
     }
-    &:active{
-      scale: .9;
+
+    & a{
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 24px;
+      padding: 15px 40px;
+      border-radius: 10px;
+      border: 1px solid #fff;
+      cursor: pointer;
+      color: #fff;
+      transition: .2s;
+      text-decoration: none;
+  
+      &:hover{
+        background-color: var(--gray-color);
+      }
+      &:active{
+        scale: .9;
+      }
+    }
+
+    & h1{
+      font-size: 60px;
+      
     }
   }
-  & h1{
-    font-size: 60px;
-    text-align: center;
-    
+
+  & .presentation__img img{
+    width: 100%;
   }
  }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1024px) {
+
   .homePage{
   
-   & .container{
-    width: 90%;
+   & .presentation{
+    display: flex;
   
-    & button{
-      font-size: 24px;
-      padding: 10px 30px;
+    & .presentation__img img{
+      display: none;
     }
-    & h1{
-      font-size: 32px;
-      text-align: center;
-      
+   }
+  }
+
+
+}
+
+@media screen and (max-width: 600px) {
+  .homePage{
+  padding: 20px;
+
+   & .presentation{
+    width: 90%;
+
+
+    & .presentation__title{
+      gap: 20px;
+
+      & button, a{
+        font-size: 16px;
+        padding: 10px 20px;
+      }
+      & h1{
+        font-size: 32px;
+        
+      }
     }
    }
   }
