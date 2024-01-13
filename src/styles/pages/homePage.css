@@ -86,6 +86,19 @@
  }
 }
 
+@media screen and (max-width: 1460px) {
+
+  .homePage{
+    padding: 30px;
+
+   & .topics{
+    align-content: flex-start;
+   }
+  }
+
+
+}
+
 @media screen and (max-width: 1024px) {
 
   .homePage{
