@@ -1,4 +1,7 @@
-import { Ecosistema, Configuracion, GestionDeContenido } from '../pages'
+import { Ecosistema } from '../pages/Ecosistema' 
+import { Configuracion } from '../pages/Ecosistema' 
+import { GestionDeContenido } from '../pages/Ecosistema' 
+ 
 
 export const sections = [
   {
@@ -24,6 +27,5 @@ export const sections = [
 
 ]
 
-export const firstPage = <Ecosistema />
 
 // sections[0].introduccion.subSections[0].component

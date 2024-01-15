@@ -1,7 +1,8 @@
 import { useEffect, useState } from 'react'
 import { Nav } from './components/Nav'
 import { SecondaryNav } from './components/SecondaryNav'
-import { Ecosistema, Home } from './pages'
+import { Ecosistema } from './pages/Ecosistema'
+import { Home } from './pages/Home'
 import './App.css'
 
 
