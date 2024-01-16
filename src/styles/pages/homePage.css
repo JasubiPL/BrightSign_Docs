@@ -79,8 +79,10 @@ main{
 
   & .presentation__img{
     width: 100%;
+    background-color: red;
     & img{
       width: 100%;
+      background-color: blue;
     }
   }
  }
