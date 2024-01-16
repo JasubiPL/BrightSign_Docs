@@ -2,11 +2,6 @@ main{
   width: 100%;
 }
 
-.bodyTest{
-  width: 100%;
- 
-}
-
 .homePage{
   width: 100%;
   background-image: url(/img/background-home.jpg);
@@ -27,6 +22,7 @@ main{
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
+    width: 100%;
 
     & p{
       width: 100%;
@@ -81,8 +77,11 @@ main{
     }
   }
 
-  & .presentation__img img{
+  & .presentation__img{
     width: 100%;
+    & img{
+      width: 100%;
+    }
   }
  }
 
