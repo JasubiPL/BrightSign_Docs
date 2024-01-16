@@ -1,24 +1,19 @@
-import { Ecosistema } from '../pages/Ecosistema' 
-import { Configuracion } from '../pages/Ecosistema' 
-import { GestionDeContenido } from '../pages/Ecosistema' 
- 
-
 export const sections = [
   {
     titleSection: '⭐ Introduccion',
     subSections: [
       {
-        component: <Ecosistema />,
+        slug: '/documentacion/introduccion/ecosistema',
         title:'Ecosistema',
         internalSections: ['Introducción', 'Qué es un Players', 'BrightSign Network']
       },
       {
-        component: <Configuracion />,
+        slug: '/documentacion/introduccion/configuracion',
         title:'Configuracion',
         internalSections: ['Tema 5', 'Tema 6', 'Tema 7', 'Tema 8']
       },
       {
-        component: <GestionDeContenido />,
+        slug: '/documentacion/introduccion/gestion-de-contenido',
         title:'Gestion de contenido',
         internalSections: ['Tema 1', 'Tema 2', 'Tema 3', 'Tema 4']
       },

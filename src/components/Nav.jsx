@@ -1,7 +1,8 @@
 import { useState } from 'react'
-import { GitHubIcon, SearchIcon } from '../jsxIcons'
-import { BurgerMenu } from '../jsxIcons/BurgerMenu'
-import '../styles/Nav.css'
+import { GitHubIcon, SearchIcon } from '@/jsxIcons'
+import { BurgerMenu } from '@/jsxIcons/BurgerMenu'
+import '@/styles/Nav.css'
+import Link from 'next/link'
 
 
 export const Nav = ({ secondaryMenuControl }) =>{
@@ -13,8 +14,8 @@ export const Nav = ({ secondaryMenuControl }) =>{
         <button className='btnSecondaryMenu' onClick={secondaryMenuControl}>
           <BurgerMenu />
         </button>
-        <h1 onClick={() => location.reload()}>Bright<span>Sign</span></h1>
-        <img src='./img/icons/doc.png' alt='Bandea mexico' />
+        <Link href='/'>Bright<span>Sign</span></Link>
+        <img src='/img/icons/doc.png' alt='Bandea mexico' />
       </div>
       {/* <form className={`${screen.width > 500 ? 'principalMenu__search' : `principalMenu__MovileSearch ${switchSearch}` }`}>
         <input type="text" placeholder='🔎 Buscar' />

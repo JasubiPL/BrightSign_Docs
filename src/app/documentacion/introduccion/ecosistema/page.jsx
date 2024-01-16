@@ -1,11 +1,11 @@
-import { sections } from '../data/pages'
-import { PageAside } from '../components/PageAside'
-import '../styles/pages/pagesStyles.css'
-import '../styles/pages/ecosistema.css'
-import { DialogBox } from '../components/DialogBox'
+import { sections } from '@/data/pages'
+import { PageAside } from '@/components/PageAside'
+import { DialogBox } from '@/components/DialogBox'
+import '@/styles/pages/pagesStyles.css'
+import '@/styles/pages/ecosistema.css'
 
 
-export const Ecosistema = () =>{
+export default function EcosistemaPage() {
   const currentSection = sections.find(section => section.titleSection == '⭐ Introduccion')
   const internalSection = currentSection.subSections[0].internalSections
 
@@ -60,23 +60,23 @@ export const Ecosistema = () =>{
 
           <section className='__playersModels'>
             <div className='__item'>
-              <img src="./img/players-models/LS5-1.webp" alt="Player modelo LS" />
+              <img src="/img/players-models/LS5-1.webp" alt="Player modelo LS" />
               <span>Gama LS</span>
             </div>
             <div className='__item'>
-              <img src="./img/players-models/HD5-1.webp" alt="Player modelo HD" />
+              <img src="/img/players-models/HD5-1.webp" alt="Player modelo HD" />
               <span>Gama HD</span>
             </div>
             <div className='__item'>
-              <img src="./img/players-models/XD5-1.webp" alt="Player modelo XD" />
+              <img src="/img/players-models/XD5-1.webp" alt="Player modelo XD" />
               <span>Gama XD</span>
             </div>
             <div className='__item'>
-              <img src="./img/players-models/XT5-1.webp" alt="Player modelo XT" />
+              <img src="/img/players-models/XT5-1.webp" alt="Player modelo XT" />
               <span>Gama XT</span>
             </div>
             <div className='__item'>
-              <img src="./img/players-models/XC5-1.webp" alt="Player modelo XC" />
+              <img src="/img/players-models/XC5-1.webp" alt="Player modelo XC" />
               <span>Gama XC</span>
             </div>
           </section>
@@ -95,7 +95,7 @@ export const Ecosistema = () =>{
             En ambas plataformas podrás controlar las licencias, cargar los contenidos, monitorear los players en tiempo real, recibir
              los reportes de errores, administrar a los usuarios, así como sus permisos.
           </p>
-          <img src="./img/ecosistema.webp" alt="ecosistema Brightsign" />
+          <img src="/img/ecosistema.webp" alt="ecosistema Brightsign" />
         </section>
 
       </section>

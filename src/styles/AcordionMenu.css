@@ -32,6 +32,11 @@
     padding-left: 20px;
     margin: 5px 0px;
 
+    & a{
+      color: #fff;
+      text-decoration: none;
+    }
+
     &:hover{
       background-color: var(--gray-color);
     }

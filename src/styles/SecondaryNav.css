@@ -63,7 +63,7 @@
   .secondaryMenu{
     position: fixed;
     top:0;
-    left: 0vw;
+    left: -100vw;
     width: 100vw;
     height: 100vh;
 

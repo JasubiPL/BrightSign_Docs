@@ -1,10 +1,10 @@
 import { BackArrow } from '../jsxIcons/BackArrow'
-import '../styles/SecondaryNav.css'
 import { AcordionMenu } from './AcordionMenu'
 import { sections } from '../data/pages'
+import '@/styles/SecondaryNav.css'
 
 
-export const SecondaryNav = ({ stateSecondaryMenu, setPage, secondaryMenuControl, displayOnDescktop}) =>{
+export const SecondaryNav = ({ stateSecondaryMenu, secondaryMenuControl, displayOnDescktop}) =>{
 
   
   return(
@@ -26,7 +26,6 @@ export const SecondaryNav = ({ stateSecondaryMenu, setPage, secondaryMenuControl
               key={section.titleSection}
               title={ section.titleSection } 
               list={ section.subSections }
-              setPage={setPage} 
             />
           )
         })
