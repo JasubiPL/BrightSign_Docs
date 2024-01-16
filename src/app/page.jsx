@@ -4,7 +4,6 @@ import { GitHubIcon } from '@/jsxIcons'
 import { DialogBox } from '@/components/DialogBox'
 import '@/styles/pages/homePage.css'
 
-let switchSecondaryMenuControl = true
 
 //Empeiza componente ---------------->
 

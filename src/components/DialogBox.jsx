@@ -1,4 +1,4 @@
-import '../styles/DialogBox.css'
+import '@/styles/DialogBox.css'
 
 export const DialogBox = ({ type = 'info', children }) =>{
 

@@ -3,7 +3,7 @@ import '../styles/AcordionMenu.css'
 import { useState } from 'react'
 
 
-export const AcordionMenu = ({ title, list, setPage}) =>{
+export const AcordionMenu = ({ title, list}) =>{
   
   
   const [{ state, classActive }, setAcordionSwitch] = useState({ state: true, classActive: 'acordionMenuActive'})

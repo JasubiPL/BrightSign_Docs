@@ -1,6 +1,6 @@
-import { BackArrow } from '../jsxIcons/BackArrow'
-import { AcordionMenu } from './AcordionMenu'
-import { sections } from '../data/pages'
+import { BackArrow } from '@/jsxIcons/BackArrow'
+import { AcordionMenu } from '@/components/AcordionMenu'
+import { sections } from '@/data/pages'
 import '@/styles/SecondaryNav.css'
 
 

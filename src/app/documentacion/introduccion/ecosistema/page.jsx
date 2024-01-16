@@ -37,7 +37,7 @@ export default function EcosistemaPage() {
         <section id='Qué es un Players' className='__players'>
           <h2>¿Qué es un Player?</h2>
           <p>
-            El "Player" es el dispositivo a través del cual se transmite el contenido a una pantalla, panel led, proyector, etc. 
+            El Player es el dispositivo a través del cual se transmite el contenido a una pantalla, panel led, proyector, etc.
             <br /><br />
             Estos dispositivos cuentan con varias entradas y características dependiendo el modelo, ofreciéndonos diferentes soluciones.
           </p>
@@ -55,7 +55,7 @@ export default function EcosistemaPage() {
           </DialogBox>
           <p>
             Actualmente, estamos en la 5ª generación, sin embargo, debido a que las generaciones 1 -3 ya están descontinuadas
-            y sin soporte, aremos referencia a los modelos de la 4ª y 5ª generación. 
+            y sin soporte, aremos referencia a los modelos de la 4ª y 5ª generación.
           </p>
 
           <section className='__playersModels'>
