@@ -2,20 +2,20 @@ import { BackArrow } from '@/jsxIcons/BackArrow'
 import { AcordionMenu } from '@/components/AcordionMenu'
 import { sections } from '@/data/pages'
 import '@/styles/SecondaryNav.css'
-import { onSecondMenu } from '@/hooks/useSecondMenu'
 import { useContext } from 'react'
+import { secondMenuContext } from '@/hooks/secondMenuContext'
 
 
 
 export const SecondaryNav = ({ displayOnDescktop}) =>{
 
-  const { SecondMenuContext, hiddenSecondMenu, } = onSecondMenu()
-  const stateSecondMenu = useContext(SecondMenuContext)
+  const smContext = useContext(secondMenuContext)
+  const { stateSecondMenu, setStateSecondMenu } = smContext
 
   return(
     <nav className={`secondaryMenu ${ stateSecondMenu } ${displayOnDescktop}`}>
       <section className='secondaryMenu__header'>
-        <button onClick={ hiddenSecondMenu }>
+        <button onClick={() => setStateSecondMenu('secondaryMenu--hidden') }>
           <BackArrow width={30} heigth={30}/>
         </button>
         <div className='__header__logo'> 

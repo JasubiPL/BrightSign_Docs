@@ -1,20 +1,18 @@
+import { secondMenuContext } from '@/hooks/secondMenuContext'
 import { GitHubIcon } from '@/jsxIcons'
 import { BurgerMenu } from '@/jsxIcons/BurgerMenu'
 import '@/styles/Nav.css'
 import Link from 'next/link'
-import { onSecondMenu } from '@/hooks/useSecondMenu'
 import { useContext } from 'react'
 
 
 export const Nav = () =>{
-  const { SecondMenuContext, showSecondMenu, } = onSecondMenu()
-  const stateSecondMenu = useContext(SecondMenuContext)
-  console.log(stateSecondMenu)
-
+  const smContext = useContext(secondMenuContext)
+  const { setStateSecondMenu } = smContext
   return(
     <nav className='principalMenu'>
       <div className='principalMenu__logo'>
-        <button className='btnSecondaryMenu' onClick={ showSecondMenu }>
+        <button className='btnSecondaryMenu' onClick={() => setStateSecondMenu('secondaryMenu--show')}>
           <BurgerMenu />
         </button>
         <Link href='/'>Bright<span>Sign</span></Link>

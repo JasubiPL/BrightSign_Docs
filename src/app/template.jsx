@@ -2,24 +2,21 @@
 import { Nav } from "@/components/Nav"
 import '@/app/globals.css'
 import { Footer } from "@/components/Footer"
-import { useContext } from "react"
-import { onSecondMenu } from "@/hooks/useSecondMenu"
+import { SecondMenuContext } from "@/hooks/secondMenuContext"
 
-let switchSecondaryMenuControl = true
 
 export default function IntroTemplate({ children }) {
 
-  const { SecondMenuContext } = onSecondMenu()
-  const stateSecondMenu = useContext(SecondMenuContext)
- 
+
+
   return (
-    <SecondMenuContext.Provider value={stateSecondMenu}>
+    <SecondMenuContext>
       <header>
         <Nav  />
       </header>
       <div >{ children }</div>
       <Footer />
-    </SecondMenuContext.Provider>
+    </SecondMenuContext>
   )
 }
 

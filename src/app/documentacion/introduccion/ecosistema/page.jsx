@@ -1,3 +1,4 @@
+'use client'
 import { sections } from '@/data/pages'
 import { PageAside } from '@/components/PageAside'
 import { DialogBox } from '@/components/DialogBox'
