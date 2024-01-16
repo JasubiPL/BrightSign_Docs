@@ -1,7 +1,6 @@
 import { sections } from '@/data/pages'
 import { PageAside } from '@/components/PageAside'
 import { DialogBox } from '@/components/DialogBox'
-import '@/styles/pages/pagesStyles.css'
 import '@/styles/pages/ecosistema.css'
 
 

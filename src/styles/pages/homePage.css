@@ -34,7 +34,7 @@ main{
       opacity: .7;
     }
 
-    & button{
+    & .btnPrimary{
       font-size: 24px;
       background-color: var(--secondary-color);
       padding: 15px 40px;

@@ -7,7 +7,7 @@ import '@/styles/pages/homePage.css'
 
 //Empeiza componente ---------------->
 
-function App() {
+function HomePage() {
   return (
     <main className="homePage">
       <section className='presentation'>
@@ -18,7 +18,7 @@ function App() {
           <p>
             La única sobre el ecosistema BrigthSign.
           </p>
-          <Link href='/documentacion/introduccion/ecosistema' >🚀 Comenzar</Link>
+          <Link className='btnPrimary' href='/documentacion/introduccion/ecosistema' >🚀 Comenzar</Link>
           <a href="https://github.com/JasubiPL/BrightSign_Docs" target="_blank" >
             <GitHubIcon width={20} height={20} fill='currentColor'/>
             Github
@@ -50,4 +50,4 @@ function App() {
   )
 }
 
-export default App
+export default HomePage
