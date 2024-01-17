@@ -3,6 +3,7 @@ import { sections } from '@/data/pages'
 import { PageAside } from '@/components/PageAside'
 import { DialogBox } from '@/components/DialogBox'
 import '@/styles/pages/ecosistema.css'
+import { NextPage } from '@/components/NextPage'
 
 
 export default function EcosistemaPage() {
@@ -12,7 +13,7 @@ export default function EcosistemaPage() {
   return(
     <section className="pagesBody ecosistema">
       <section className='pagesBody--content'>
-        <h1 id='Introducción'>Introducción</h1>
+        <h1 id='Introducción'>Ecosistema</h1>
         <section className='__introduccion'>
           <p>
             BrightSign es un sistema de gestión de contenido con mucho potencial que nos permite proyectar imágenes, 
@@ -97,7 +98,30 @@ export default function EcosistemaPage() {
           </p>
           <img src="/img/ecosistema.webp" alt="ecosistema Brightsign" />
         </section>
+        <section id='BrightSign Author' className='__bsAuthor'>
+          <h2>BrightSign Author</h2>
 
+          <p>Brightsign Author es el software que nos permite gestionar y controlar todo lo referente a los Players conectados a nuestra nube.</p>
+          <p>A diferencia del portal web, aquí no tenemos la posibilidad de administrar a los usuarios  que tienen acceso a nuestra red, ni tampoco asignar las licencias. </p>
+
+          <div className='column-2'>
+            <DialogBox type='comment' >
+              <h3>Funciones principales</h3>
+              <ul>
+                <li> Monitoreo </li>
+                <li> Creación de archivos de configuración </li>
+                <li> Elaboración de presentación </li>
+                <li> Carga de presentaciones </li>
+                <li> Localizar errores </li>
+
+              </ul>
+            </DialogBox>
+            <img src="/img/BrightAuthor.webp" alt="" />
+          </div>
+        </section>
+        <NextPage slug='/documentacion/introduccion/configuracion' >
+          Configuracion
+        </NextPage> 
       </section>
       <PageAside internalSection={ internalSection }/>
     </section>

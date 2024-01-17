@@ -1,6 +1,7 @@
 .documentacionTemplate{
   display: flex;
   width: 100%;
+  font-size: 17px;
 }
 .pagesBody{
   display: flex;
@@ -36,7 +37,7 @@
     display: flex;
     flex-direction: column;
     width: 80%;
-    padding: 50px 100px;
+    padding: 50px 200px;
 
   }
 }

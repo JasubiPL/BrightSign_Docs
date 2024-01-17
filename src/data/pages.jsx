@@ -5,7 +5,7 @@ export const sections = [
       {
         slug: '/documentacion/introduccion/ecosistema',
         title:'Ecosistema',
-        internalSections: ['Introducción', 'Qué es un Players', 'BrightSign Network']
+        internalSections: ['Introducción', 'Qué es un Players', 'BrightSign Network','BrightSign Author']
       },
       {
         slug: '/documentacion/introduccion/configuracion',
