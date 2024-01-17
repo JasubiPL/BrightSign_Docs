@@ -16,6 +16,11 @@ main{
   gap: 30px;
   align-items: center;
   min-height: 80vh;
+  overflow: hidden;
+
+  & img{
+    width: 50%;
+  }
 
   & .presentation__title{
     display: flex;
@@ -73,16 +78,6 @@ main{
     & h1{
       font-size: 60px;
       
-    }
-  }
-
-  & .presentation__img{
-    width: 50%;
-    background-color: red;
-
-    & img{
-      width: 100%;
-      background-color: blue;
     }
   }
  }

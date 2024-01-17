@@ -24,9 +24,7 @@ function HomePage() {
             Github
           </a>
         </article>
-        <article className='presentation__img'>
-          <img src="./img/wallpaper-players.png" alt="" />
-        </article>
+        <img src="./img/wallpaper-players.png" alt="" />
       </section>
       <section className='topics'>
         <DialogBox type='info' >
