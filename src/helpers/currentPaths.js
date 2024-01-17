@@ -7,8 +7,4 @@ export const currentPath = ( pathname ) =>{
 
   const activeItemPage = document.getElementById(pathname)
   activeItemPage.className = 'acordionMenu__item selected'
-
-  return{
-    pathname
-  }
 }

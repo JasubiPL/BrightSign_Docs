@@ -1,13 +1,17 @@
 import Link from 'next/link'
 import '../styles/AcordionMenu.css'
-import { useEffect, useState } from 'react'
+import { useContext, useEffect, useState } from 'react'
 import { currentPath } from '@/helpers/currentPaths'
 import { usePathname } from 'next/navigation'
+import { secondMenuContext } from '@/hooks/secondMenuContext'
 
 
 export const AcordionMenu = ({ title, list}) =>{
   const [{ state, classActive }, setAcordionSwitch] = useState({ state: true, classActive: 'acordionMenuActive'})
+  
   const pathname = usePathname()
+  const smContext = useContext(secondMenuContext)
+  const { setStateSecondMenu } = smContext
 
   const switchAcordion = () =>{
 
@@ -21,6 +25,7 @@ export const AcordionMenu = ({ title, list}) =>{
 
   useEffect(() =>{
     currentPath(pathname)
+    setStateSecondMenu('secondaryMenu--hidden')
   },[pathname])
 
 
