@@ -14,7 +14,7 @@ export default function IntroTemplate({ children }) {
       <header>
         <Nav  />
       </header>
-      <div >{ children }</div>
+      { children }
       <Footer />
     </SecondMenuContext>
   )

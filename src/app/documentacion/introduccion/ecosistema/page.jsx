@@ -7,7 +7,7 @@ import { NextPage } from '@/components/NextPage'
 
 
 export default function EcosistemaPage() {
-  const currentSection = sections.find(section => section.titleSection == '⭐ Introduccion')
+  const currentSection = sections.find(section => section.titleSection == '🚀 Introduccion')
   const internalSection = currentSection.subSections[0].internalSections
 
   return(
@@ -119,8 +119,8 @@ export default function EcosistemaPage() {
             <img src="/img/BrightAuthor.webp" alt="" />
           </div>
         </section>
-        <NextPage slug='/documentacion/introduccion/configuracion' >
-          Configuracion
+        <NextPage slug='/documentacion/introduccion/como-empezar' >
+          Cómo Empezar
         </NextPage> 
       </section>
       <PageAside internalSection={ internalSection }/>

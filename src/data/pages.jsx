@@ -1,6 +1,6 @@
 export const sections = [
   {
-    titleSection: '⭐ Introduccion',
+    titleSection: '🚀 Introduccion',
     subSections: [
       {
         slug: '/documentacion/introduccion/ecosistema',
@@ -8,15 +8,10 @@ export const sections = [
         internalSections: ['Introducción', 'Qué es un Players', 'BrightSign Network','BrightSign Author']
       },
       {
-        slug: '/documentacion/introduccion/configuracion',
-        title:'Configuracion',
+        slug: '/documentacion/introduccion/como-empezar',
+        title:'Cómo Empezar',
         internalSections: ['Tema 5', 'Tema 6', 'Tema 7', 'Tema 8']
-      },
-      {
-        slug: '/documentacion/introduccion/gestion-de-contenido',
-        title:'Gestion de contenido',
-        internalSections: ['Tema 1', 'Tema 2', 'Tema 3', 'Tema 4']
-      },
+      }
     ] 
   },
 
