@@ -18,11 +18,13 @@ function HomePage() {
           <p>
             La única sobre el ecosistema BrigthSign.
           </p>
-          <Link className='btnPrimary' href='/documentacion/introduccion/ecosistema' >🚀 Comenzar</Link>
-          <a href="https://github.com/JasubiPL/BrightSign_Docs" target="_blank" >
-            <GitHubIcon width={20} height={20} fill='currentColor'/>
-            Github
-          </a>
+          <div className='__buttons'>
+            <Link className='btnPrimary' href='/documentacion/introduccion/ecosistema' >🚀 Comenzar</Link>
+            <a href="https://github.com/JasubiPL/BrightSign_Docs" target="_blank" >
+              <GitHubIcon width={20} height={20} fill='currentColor'/>
+              Github
+            </a>
+          </div>
         </article>
         <img src="./img/wallpaper-players.png" alt="" />
       </section>
