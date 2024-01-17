@@ -26,7 +26,7 @@ function HomePage() {
             </a>
           </div>
         </article>
-        <img src="./img/wallpaper-players.png" alt="" />
+        <img src="./img/wallpaper-players.webp" alt="" />
       </section>
       <section className='topics'>
         <DialogBox type='info' >

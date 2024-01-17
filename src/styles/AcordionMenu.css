@@ -1,17 +1,18 @@
 .acordionMenuActive{
   list-style: none;
-  border-bottom: 1px solid var(--gray-color);
   padding: 10px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+
 
   & h3{
     font-weight: 500;
     width: 100%;
     display: flex;
     padding: 10px;
-    border-radius: 5px;
     justify-content: space-between;
     cursor: pointer;
-    background-color: var(--secondary-color);
     font-size: 16px;
     align-items: center;
 
@@ -25,34 +26,33 @@
   }
   
   & li{
+    width: 93%;
     padding: 10px;
-    border-radius: 5px;
     font-size: 14px;
     cursor: pointer;
     padding-left: 20px;
-    margin: 5px 0px;
+    color: #fff7;
+    border-left: 1px solid var(--gray-color);
+    
 
     & a{
-      color: #fff;
+      color: #fff7;
       text-decoration: none;
     }
 
     &:hover{
       background-color: var(--gray-color);
     }
+  }
 
-    &::before{
-      content: '⌀';
-      margin-right:5px ;
+  .selected {
+    border-color: var(--accent-color);
+    color: var(--accent-color);
+
+    & a{
+      color: var(--accent-color);
+  
     }
-  }
-
-  .deselect{
-    background-color: var(--black-color);
-  }
-
-  .selected{
-    background-color: rgba(113, 44, 249, .25)
   }
 }
 

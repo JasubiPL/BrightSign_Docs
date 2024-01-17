@@ -4,7 +4,7 @@ main{
 
 .homePage{
   width: 100%;
-  background-image: url(/img/background-home.jpg);
+  background-image: url(/img/background-home.webp);
   background-color: rgba(0, 0, 0, 0.7);
   background-position: right;
   background-size: cover;

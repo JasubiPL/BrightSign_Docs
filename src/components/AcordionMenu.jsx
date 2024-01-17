@@ -1,7 +1,6 @@
 import Link from 'next/link'
 import '../styles/AcordionMenu.css'
 import { useContext, useEffect, useState } from 'react'
-import { currentPath } from '@/helpers/currentPaths'
 import { usePathname } from 'next/navigation'
 import { secondMenuContext } from '@/hooks/secondMenuContext'
 
@@ -24,7 +23,6 @@ export const AcordionMenu = ({ title, list}) =>{
   }
 
   useEffect(() =>{
-    currentPath(pathname)
     setStateSecondMenu('secondaryMenu--hidden')
   },[pathname])
 
@@ -34,7 +32,7 @@ export const AcordionMenu = ({ title, list}) =>{
       <h3 onClick={switchAcordion}>{ title }</h3>
       {
         list.map( option =>(
-          <li className={`acordionMenu__item`} key={ option.title } id={option.slug}>
+          <li className={`acordionMenu__item ${ pathname === option.slug ? 'selected' : ''}`} key={ option.title } id={option.slug}>
             <Link href={option.slug}>
               {option.title}
             </Link>
