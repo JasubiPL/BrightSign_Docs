@@ -29,7 +29,7 @@
     padding-left: 20px;
 
     & li{
-      margin: 15px 0px;
+      margin-bottom: 10px;
     }
   };
 

@@ -12,9 +12,9 @@ export default function ComoEmpezarPage(){
   return(
     <section className="pagesBody">
       <section className="pagesBody--content"> 
-      <h1>Cómo Empezar</h1>
+        <h1>Cómo Empezar</h1>
         <section className="mt-16">
-          <h2>¿Cómo funciona BrightSign?</h2>
+          <h2>Primeros pasos en BrigthSign</h2>
 
           <p>Para poder usar BrightSign Network o BrightSign Author para controlar los Players, necesitas tener un usuario, contraseña y una nube.</p>
           <p>Para obtener estos datos necesitarás acudir con algún embajador de la marca dependiendo de tu país. En México tenemos por mencionar algunos a Pixel Window y NewTimes.</p>
@@ -32,7 +32,7 @@ export default function ComoEmpezarPage(){
           </p>
         </section>
         <section className="mt-8">
-          <h2>Primeros pasos en BrigthSign Author</h2>
+          <h2>Interfaz de usuario</h2>
 
           <p>Una vez ya cuentas con tus datos de acceso, ingresa al portar web en <a className="link" href="https://brightsignnetwork.com/" target="_blank">brightsignnetwork.com</a></p>
           <img className="m-auto my-8 w-full md:w-3/4" src="/img/bs-network/login-page-bsnetwork.webp" alt="pagina de brightsign network"  />
@@ -50,8 +50,33 @@ export default function ComoEmpezarPage(){
             Seleccionarás la casilla de Términos y Condiciones y, por último daremos clic en <span className="highlighted">SUBMIT</span> para acceder.
           </p>
           <img className="m-auto my-8 w-full md:w-1/2" src="/img/bs-network/register-bsnetwork.webp" alt="pagina de brightsign network"  />
+          <p>
+            Posteriormente, te aparecerá la pantalla de inicio de BrightSign Network, <span className="highlighted">la cual revisa revisaremos más en profundidad en otras secciónes.</span>
+          </p>
+          <img className="my-8" src="/img/bs-network/home-page-bs-network.webp" alt="BSNetwork Home" />
+          <p>
+          Al acceder, la primera página que nos muestra es la de <span className="highlighted">SETTINGS</span> donde tenemos diferente información como nuestro usuario, los permisos que tenemos y la posibilidad de cambiar la contraseña.
+          </p> 
+          <p>
+            Dentro del portal podemos encontrar varias secciones, las más importantes y las que probablemente más vas a usar son:
+          </p>
+          <DialogBox className='column-2' type="comment">
+            <ul>
+              <li>Create</li>
+              <li>Edit</li>
+              <li>Group</li>
+            </ul>
+            <ul>
+              <li>Curren Usage</li>
+              <li>Device Setup</li>
+            </ul>
+          </DialogBox>
+        </section>
+        <section>
+          <h2>Configurando nuestro primer Player</h2>
         </section>
 
+        {/*----------------- Prefooter ------------- */}
         <section className="flex w-full justify-between items-center mt-8">
         <PreviusPage slug='/documentacion/introduccion/ecosistema'> Ecosistema</PreviusPage>
         <NextPage slug='/'>Inicio</NextPage>

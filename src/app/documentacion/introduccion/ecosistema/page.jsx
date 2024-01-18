@@ -104,9 +104,9 @@ export default function EcosistemaPage() {
           <p>Brightsign Author es el software que nos permite gestionar y controlar todo lo referente a los Players conectados a nuestra nube.</p>
           <p>A diferencia del portal web, aquí no tenemos la posibilidad de administrar a los usuarios  que tienen acceso a nuestra red, ni tampoco asignar las licencias. </p>
 
-          <div className='column-2'>
+          <div className='column-2 items-center gap-3'>
             <DialogBox type='comment' >
-              <h3>Funciones principales</h3>
+              <label>Funciones principales</label>
               <ul>
                 <li> Monitoreo </li>
                 <li> Creación de archivos de configuración </li>
@@ -119,6 +119,7 @@ export default function EcosistemaPage() {
             <img src="/img/BrightAuthor.webp" alt="" />
           </div>
         </section>
+
         <NextPage slug='/documentacion/introduccion/como-empezar' >
           Cómo Empezar
         </NextPage> 

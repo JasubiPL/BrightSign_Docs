@@ -39,6 +39,7 @@
   }
 
   & .__header__logo{
+    font-size: 24px;
     
     & h3{
       font-weight: 600;
@@ -65,7 +66,7 @@
     top:0;
     width: 100vw;
     height: 100vh;
-
+    
     & .secondaryMenu__header{
       display: flex;
     }

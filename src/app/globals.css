@@ -14,7 +14,7 @@
   --secondary-color: #712cf9;
   --secondary-color-alpha: rgba(113, 44, 249, .25);
   --accent-color:#a364ff;
-  --black-color: #000000CC;
+  --black-color: #000000;
   --gray-color: rgba(255, 255, 255, 0.1);
   --title-font: 'Oswald', sans-serif;
   --code-font: 'Space Mono', monospace;
@@ -70,9 +70,8 @@ h1, h2, h3{
 .column-2{
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 20px;
   justify-content: center;
-  align-items: center;
+
 }
 
 @media screen and (max-width:1024px) {
