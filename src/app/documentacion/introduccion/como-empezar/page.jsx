@@ -2,6 +2,7 @@ import { DialogBox } from "@/components/DialogBox";
 import { NextPage } from "@/components/NextPage";
 import { PageAside } from "@/components/PageAside";
 import { PreviusPage } from "@/components/PreviusPage";
+import { Highlighted } from '@/components/Highlighted'
 import { sections } from "@/data/pages";
 
 
@@ -26,9 +27,9 @@ export default function ComoEmpezarPage(){
 
           <p>
           Cuando compres tu primera licencia, el proveedor pedirá un correo para darlo de alta 
-          como <span className="highlighted">Administrador</span>, una contraseña y, por 
-          supuesto, te preguntará cuál deseas que sea el nombre de la <span className="highlighted">nube</span> 
-          donde gestionarás a todos los players. <span className="highlighted">Puedes tener varias nubes usando el mismo correo.</span>
+          como <Highlighted>Administrador</Highlighted>, una contraseña y, por 
+          supuesto, te preguntará cuál deseas que sea el nombre de la <Highlighted>nube</Highlighted> 
+          donde gestionarás a todos los players. <Highlighted>Puedes tener varias nubes usando el mismo correo.</Highlighted>
           </p>
         </section>
         <section className="mt-8">
@@ -38,24 +39,24 @@ export default function ComoEmpezarPage(){
           <img className="m-auto my-8 w-full md:w-3/4" src="/img/bs-network/login-page-bsnetwork.webp" alt="pagina de brightsign network"  />
           <p>
             Aquí nos pedirán usuario y contraseña, sin embargo, nosotros accederemos en el enlace de la 
-            parte inferior derecha que dice New User. <span className="highlighted">Esto solo es la primera vez que creamos una nube, 
-            después podemos acceder con normalidad en la página Sign In.</span>
+            parte inferior derecha que dice New User. <Highlighted>Esto solo es la primera vez que creamos una nube, 
+            después podemos acceder con normalidad en la página Sign In.</Highlighted>
           </p>
           <p>
-            Al dar clic en <span className="highlighted">New User</span> nos mandará a la página de registro y no pedirá 
+            Al dar clic en <Highlighted>New User</Highlighted> nos mandará a la página de registro y no pedirá 
             el nombre de la nube que dio de alta el proveedor, el correo que le proporcionaste y él te dará 
-            el <span className="highlighted">SUBSCRIPTION CODE</span> o codigo de subscripcion.
+            el <Highlighted>SUBSCRIPTION CODE</Highlighted> o codigo de subscripcion.
           </p>
           <p>
-            Seleccionarás la casilla de Términos y Condiciones y, por último daremos clic en <span className="highlighted">SUBMIT</span> para acceder.
+            Seleccionarás la casilla de Términos y Condiciones y, por último daremos clic en <Highlighted>SUBMIT</Highlighted> para acceder.
           </p>
           <img className="m-auto my-8 w-full md:w-1/2" src="/img/bs-network/register-bsnetwork.webp" alt="pagina de brightsign network"  />
           <p>
-            Posteriormente, te aparecerá la pantalla de inicio de BrightSign Network, <span className="highlighted">la cual revisa revisaremos más en profundidad en otras secciónes.</span>
+            Posteriormente, te aparecerá la pantalla de inicio de BrightSign Network, <Highlighted>la cual revisa revisaremos más en profundidad en otras secciónes.</Highlighted>
           </p>
           <img className="my-8" src="/img/bs-network/home-page-bs-network.webp" alt="BSNetwork Home" />
           <p>
-          Al acceder, la primera página que nos muestra es la de <span className="highlighted">SETTINGS</span> donde tenemos diferente información como nuestro usuario, los permisos que tenemos y la posibilidad de cambiar la contraseña.
+          Al acceder, la primera página que nos muestra es la de <Highlighted>SETTINGS</Highlighted> donde tenemos diferente información como nuestro usuario, los permisos que tenemos y la posibilidad de cambiar la contraseña.
           </p> 
           <p>
             Dentro del portal podemos encontrar varias secciones, las más importantes y las que probablemente más vas a usar son:
@@ -73,7 +74,33 @@ export default function ComoEmpezarPage(){
           </DialogBox>
         </section>
         <section>
-          <h2>Configurando nuestro primer Player</h2>
+          <h2 id='Configurando nuestro Player'>Configurando nuestro Player</h2>
+
+          <p>Para configurar nuestro primer Player y empezar a proyectar contenido, necesitamos crear un Grupo.
+          <Highlighted>Los grupos pueden contentar a varios players</Highlighted> a los que se les tiene pensado enviar el mismo contenido.</p>
+          <p>Para nuestro ejemplo, solo daremos de alta un Player.</p>
+          <p>Vamos a entrar en la pestaña de Groups.</p>
+          <img className="my-8" src="/img/bs-network/groups-page-bs-network.webp" alt="Pestaña grupos" />
+          <p>En esta sección tenemos la lista de todos los Grupos que tenemos creados, 
+            así como el número de Players en cada uno, el estatus y la presentación que tiene activa.</p>
+          <DialogBox type="info" >
+            <p>💡La <Highlighted>Presentación</Highlighted> es el archivo que contiene las imágenes, videos y demás contenido que  mandaremos al Player</p>
+          </DialogBox>
+          <img className="my-8" src="/img/bs-network/groups-page-2-bs-network.webp" alt="Pestaña grupos con anotaciones" />
+          <p>Nosotros precionaremos el boton <Highlighted >Add Group</Highlighted> para crear el grupo donde daremos de alta a nuestro Player y 
+            posteriormente agregaremos la Presentación.</p>
+          <p>Nos aparecerá una ventana donde vendrán varias secciones, sin embargo, por ahora dejaremos todo como esta y solo le daremos un 
+            nombre a nuestro Grupo. Yo le pondré Documentacion BSN para el ejemplo. Tú dale el nombre que gustes</p>
+          <p>Es recomendable que nombres los grupos con referencia a la ciudad, nombre del local o algo con el que 
+            puedas identificar a dónde pertenece y qué contenido tiene.</p>
+          <img className="my-8 m-auto w-full md:w-1/2" src="/img/bs-network/register-group-window-bs-network.webp" alt="Ventana de crear grupo" />
+          <p>Presionaremos <Highlighted>Create</Highlighted>, la página se recargará y mandará un cuadro de diálogo en la parte superior, 
+          indicándonos que el grupo fue creado, seguido del nombre que le dimos y listo, tenemos nuestro grupo creado.</p>
+          <img className="my-8 m-auto w-full md:w-2/3" src="/img/bs-network/register-group-alert-bs-network.webp" alt="Ventana de crear grupo" />
+          
+        </section>
+        <section>
+          <h2 id='Creando nuestra Presentación'>Creando nuestra Presentación</h2>
         </section>
 
         {/*----------------- Prefooter ------------- */}

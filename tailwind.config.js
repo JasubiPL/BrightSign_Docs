@@ -10,7 +10,8 @@ module.exports = {
   ],
   theme: {
     colors:{
-      accent:'#a364ff'
+      accent:'#a364ff',
+      gray_color: 'rgba(255, 255, 255, 0.15)',
     },
     extend: {},
   },

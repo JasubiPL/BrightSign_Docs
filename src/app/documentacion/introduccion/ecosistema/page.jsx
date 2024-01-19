@@ -2,8 +2,9 @@
 import { sections } from '@/data/pages'
 import { PageAside } from '@/components/PageAside'
 import { DialogBox } from '@/components/DialogBox'
-import '@/styles/pages/ecosistema.css'
 import { NextPage } from '@/components/NextPage'
+import { Highlighted } from '@/components/Highlighted'
+import '@/styles/pages/ecosistema.css'
 
 
 export default function EcosistemaPage() {
@@ -92,7 +93,7 @@ export default function EcosistemaPage() {
             <br /><br />
             En la sección Portal Web encontrarás más información sobre cómo obtener tus credenciales.
 
-            La aplicación de escritorio es <span className='highlighted'>BrigthSign Author</span>, la cual está disponible solo en Windows.
+            La aplicación de escritorio es <Highlighted>BrigthSign Author</Highlighted>, la cual está disponible solo en Windows.
             En ambas plataformas podrás controlar las licencias, cargar los contenidos, monitorear los players en tiempo real, recibir
              los reportes de errores, administrar a los usuarios, así como sus permisos.
           </p>

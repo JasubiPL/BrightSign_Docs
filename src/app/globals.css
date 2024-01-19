@@ -15,7 +15,7 @@
   --secondary-color-alpha: rgba(113, 44, 249, .25);
   --accent-color:#a364ff;
   --black-color: #000000;
-  --gray-color: rgba(255, 255, 255, 0.1);
+  --gray-color: rgba(255, 255, 255, 0.15);
   --title-font: 'Oswald', sans-serif;
   --code-font: 'Space Mono', monospace;
 }
@@ -47,6 +47,7 @@ h1, h2, h3{
 
 .highlighted{
   background-color: var(--gray-color);
+  font-style: italic;
   padding: 2px 5px;
   border-radius: 3px;
 }
