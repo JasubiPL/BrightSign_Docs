@@ -121,7 +121,7 @@ export default function EcosistemaPage() {
           </div>
         </section>
 
-        <NextPage slug='/documentacion/introduccion/como-empezar' >
+        <NextPage slug='/documentacion/introduccion/02-primeros-pasos' >
           Cómo Empezar
         </NextPage> 
       </section>

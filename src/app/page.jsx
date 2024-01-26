@@ -19,7 +19,7 @@ function HomePage() {
             La única sobre el ecosistema BrigthSign.
           </p>
           <div className='__buttons'>
-            <Link className='btnPrimary' href='/documentacion/introduccion/ecosistema' >🚀 Comenzar</Link>
+            <Link className='btnPrimary' href='/documentacion/introduccion/01-ecosistema' >🚀 Comenzar</Link>
             <a href="https://github.com/JasubiPL/BrightSign_Docs" target="_blank" >
               <GitHubIcon width={20} height={20} fill='currentColor'/>
               Github
