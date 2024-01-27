@@ -55,9 +55,33 @@ export default function InstalacionBrightAuthorPage(){
 
           <p>Este error aparecerá cada que abramos el programa, sin embargo, no es necesaria la instalación, ya que no afecta en nada el funcionamiento del programa.</p>
 
-
-
+          <h2 className="mt-8">Interfaz</h2>
+          <p>Al abrir por primera vez el programa, nos lanzará una venta para abrir o crear una presentación, sin embargo, nosotros presionaremos <Highlighted>Cancelar</Highlighted>.</p>
           
+          <img className="m-auto my-8 w-full" src="/img/bs-author/bsa-first-open-1.png" alt="ventana inicio" />
+          <img className="m-auto my-8 w-3/5" src="/img/bs-author/bsa-first-open-2.png" alt="ventana de inicio 2" />
+
+          <p>El programa nos abrirá en la pestaña Create y como podrás notar, tenemos en la parte superior 4 pestañas: <Highlighted>Create</Highlighted>, <Highlighted>Edit</Highlighted>, <Highlighted>Publish</Highlighted>, <Highlighted>Manage</Highlighted> y 
+          en la parte superior tenemos otras más pequeñas, las cuales son: <Highlighted>File</Highlighted>, <Highlighted>Edit</Highlighted> <Highlighted>Tools</Highlighted>, Help.</p>
+          <DialogBox type="info">
+            💡Todas estas pestañas y opciones las veremos superficialmente en esta sección de introducción.
+          </DialogBox>
+          
+          <img className="m-auto my-8 w-3/4 md:w-3/4" src="/img/bs-author/bsa-options.png" alt="prestañas de opciones" />
+
+          <p>Para finalizar esta sección y proseguir a configurar nuestro primer player, tenemos que habilitar la conexión a BrightSign Network, ya que está deshabilitada por defecto.</p>
+          <p>Para esto iremos a <Highlighted>Edit » Preferences</Highlighted></p>
+
+          <img className="m-auto my-8 w-3/4 md:w-3/4" src="/img/bs-author/bsa-preferences-window.png" alt="ventana preferencias" />
+
+          <p>Se nos abrirá una pequeña ventana con varias opciones que revisaremos más adelante, por lo mientras nos dirigiremos a <Highlighted>Network</Highlighted>,
+           seleccionaremos la casilla <Highlighted>Enable BrightSign Network</Highlighted> y presionaremos OK</p>
+          
+          <img className="m-auto my-8 w-3/4 md:w-3/4" src="/img/bs-author/bsa-preferences-network-window.png" alt="ventana preferencias y opcion Network" />
+          
+          <p>Para verificar que se habilitó el uso de la BS Network, se nos tendrá que habilitar un mensaje en la esquina superior derecha, arriba del botón <Highlighted>Upload to network</Highlighted>, 
+          que diga <Highlighted>No Signed In</Highlighted>.</p>
+          <p>Seguiremos con BrightAuthor en la lección de <Link className="link" href='/documentacion/introduccion/05-creando-presentacion'>Crear Presentación</Link></p>
         </section>
 
         {/*----------------- Prefooter ------------- */}
