@@ -33,9 +33,23 @@ export default function CreandoPresentacionPage(){
           </DialogBox>
         </section>
         <section>
-          <p>
-            
-          </p>
+          <p>Las presentaciones se crean desde BrightAuthor, asi que vamos a abrir el programa para comenzar.</p>
+          <p>Una vez abierto, vamos a ir a la pestaña <Highlighted>FILE » New Presentation</Highlighted></p>
+        
+          <img className="my-8 m-auto w-full lg:w-3/5" src="/img/bs-author/bsa-newpresentation-menu.webp" alt="Diagrama de funcionamiento de BS" />
+
+          <p>Se nos desplegará una ventana donde configuraremos los parámetros de la presentación.</p>
+
+          <img className="my-8 m-auto w-full lg:w-3/5" src="/img/bs-author/bsa-presentation-parameters.png" alt="Diagrama de funcionamiento de BS" />
+
+          <p>Como puedes observar en la parte superior tenemos 2 pestañas, <Highlighted>Main</Highlighted> y <Highlighted>Advanced</Highlighted>. Nosotros 
+          trabajaremos para este ejemplo en Main, al menos que requieras algo muy especial en la presentación, no usaras prácticamente la pestaña de Advanced.</p>
+          <p>En la primera seccion de la pestaña Main, pondremos el nombre de nuestra presentación en Save As, seguido de la ruta en donde guardaremos nuestro archivo. </p>
+          <p>En este caso yo le he puesto Presentación de Prueba y lo guardaré en una carpeta que cree en Documentos llamada BS-Curso.</p>
+          <DialogBox type="info">
+           💡 Recuerda que en la carpeta donde guardes tu presentación deberás guardar también tus Imágenes, videos y archivos que vayas a utilizar.
+          </DialogBox>
+
         </section>
 
         {/*----------------- Prefooter ------------- */}
