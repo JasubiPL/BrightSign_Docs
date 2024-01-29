@@ -1,11 +1,11 @@
 {
   "version": "2.0.0",
-  "task":[
+  "tasks":[
     {
       "type": "npm",
       "script": "dev",
       "runOptions":{
-        "runOn":"FolderOpen"
+        "runOn":"folderOpen"
       }
     }
   ]
